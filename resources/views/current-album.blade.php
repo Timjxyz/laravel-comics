@@ -29,7 +29,9 @@
         </div>
 
         <p>{{$albums['description']}}</p>
-        <img id="publicita-img" src="{{asset('img/adv.jpg')}}">
+        <a href="#">
+          <img id="publicita-img" src="{{asset('img/adv.jpg')}}">
+        </a>
       </div>
     </div>
     
