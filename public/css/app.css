@@ -15,7 +15,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  height: 100px;
+  height: 99px;
 }
 
 .container-header .logo img {
@@ -296,8 +296,150 @@ nav ul li a {
   background-color: #fff;
 }
 
-.main-item-active .container-item-active {
+.main-item-active .box-img-activ {
+  position: relative;
+  height: 60px;
+  width: 100%;
+  background-color: #0282f9;
+}
+
+.main-item-active .box-img-activ .box-img {
   width: 70%;
+  margin: auto;
+}
+
+.main-item-active .box-img-activ img {
+  position: relative;
+  height: 200px;
+  left: 155px;
+  bottom: 170px;
+}
+
+.main-item-active .box-text {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+}
+
+.main-item-active .box-text #title {
+  margin-top: 20px;
+  color: #003f5e;
+}
+
+.main-item-active .box-description {
+  margin-top: 20px;
+  width: 83%;
+}
+
+.main-item-active .box-description p {
+  font-size: 14px;
+}
+
+.main-item-active .box-description .top-info {
+  background-color: #55ba59;
+  color: #7ff18e;
+  height: 50px;
+  border-bottom: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-item-active .box-description .top-info span {
+  color: #fff;
+}
+
+.main-item-active .box-description .top-info .disponibility span {
+  padding: 16px;
+  border-right: 1px solid #000;
+  height: 50px;
+}
+
+.main-item-active #publicita-img {
+  width: 250px;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  left: 670px;
+  bottom: 214px;
+}
+
+#details {
+  background-color: #f6f6f6;
+  min-height: 300px;
+}
+
+#details .details-container {
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+
+#details .details-container .box-details {
+  padding-top: 30px;
+}
+
+#details .details-container .box-details h3 {
+  color: #003f5e;
+  padding-bottom: 20px;
+}
+
+#details .details-container .box-details .text-details {
+  display: flex;
+  width: 430px;
+  margin-right: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid #003f5e;
+  border-top: 1px solid #003f5e;
+}
+
+#details .details-container .box-details .text-details h6 {
+  color: #003f5e;
+  padding-right: 20px;
+}
+
+#details .details-container .box-details .text-details p {
+  font-size: 12px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.shop-white {
+  background-color: #f6f6f6;
+  z-index: 1000;
+  position: absolute;
+  width: 100%;
+}
+
+.shop-white .container {
+  width: 100;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 150px;
   margin: 0px auto;
+}
+
+.shop-white .container .img-shop {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.shop-white .container .img-shop img {
+  height: 50px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 10px;
 }
 

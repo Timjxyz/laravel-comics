@@ -13,9 +13,9 @@
         </div>
         <div class="container">
              
-            @foreach($albums as $album) 
+            @foreach($albums as $key => $album) 
                 <div class="item-home">
-                    <a class="active-album" href="current-album">
+                    <a class="active-album" href="/current-album/{{$key}}">
                         <img src="{{$album['thumb']}}" alt="{{$album['title']}}">
                     </a>
                         <h3>{{$album['title']}}</h3>

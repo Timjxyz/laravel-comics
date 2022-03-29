@@ -18,12 +18,15 @@ Route::get('/', function () {
     return view('home',['albums'=>$comics]);
     
 });
-Route::get('/home', function () {
-    return view('home');
-});
 
-Route::get('/current-album', function () {
+Route::get('/current-album/{id}', function ($id) {
+    
     $comics = config('comics');
-    return view('current-album',['albums'=>$comics]);
+    if(is_numeric($id) && $id >=0 && $id < count($comics)){
+        $album = $comics[$id];
+        return view('current-album',['albums'=>$album]);
+    }else{
+        abort(404);
+    }
     
 });

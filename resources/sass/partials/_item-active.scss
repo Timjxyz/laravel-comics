@@ -1,7 +1,113 @@
 .main-item-active{
     background-color: #fff;
-    .container-item-active{
-        width: 70%;
-        margin: 0px auto;
+
+    .box-img-activ{
+        position: relative;
+        height: 60px;
+        width: 100%;
+        background-color: $primaryColor;
+        .box-img{
+            width: 70%;
+            margin: auto;
+        }
+        img{
+            position: relative;
+            height: 200px;
+            left: 155px;
+            bottom: 170px;
+        }
     }
+
+    .box-text{
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        max-height: 300px;
+        #title{
+            margin-top: 20px;
+            color: #003f5e;
+        }
+        
+    }
+
+    .box-description{
+        margin-top: 20px;
+        width: 83%;
+        p{
+            font-size: 14px;
+        }
+        .top-info{
+            background-color:#55ba59;
+            color: #7ff18e;
+            height: 50px;
+            border-bottom: 1px solid #000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span{
+                color: #fff;
+            }
+            .disponibility{
+                span{
+                    padding: 16px;
+                    border-right: 1px solid #000;
+                    height: 50px;
+                }
+            }
+        }
+    }
+    #publicita-img{
+        width: 250px;
+        height: 200px;
+        object-fit: contain;
+        position: relative;
+        left: 670px;
+        bottom: 214px;
+    }
+ 
+}
+
+#details{
+    background-color:#f6f6f6;
+    min-height: 300px;
+    
+    .details-container{
+        display: flex;
+        width: 50%;
+        margin: auto;
+        .box-details{
+            padding-top: 30px;
+           
+            h3{
+                color:#003f5e;
+                padding-bottom: 20px;
+                
+            }
+            .text-details{
+                display: flex;
+                width: 430px;
+                margin-right: 20px;
+                justify-content: space-between;
+                border-bottom: 1px solid #003f5e;
+                border-top: 1px solid #003f5e;
+                h6{
+                    color:#003f5e;
+                    padding-right: 20px;
+                    
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+}
+
+.p-10{
+    padding: 10px;
+}
+.p-20{
+    padding: 20px;
 }
