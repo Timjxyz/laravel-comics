@@ -42,7 +42,12 @@
         <h6>Art By</h6>
   
         @foreach ($albums["artists"] as $artist)
-        <p>{{str_replace(' ', ',', $artist)}}</p>
+          @if($loop->last)
+            <span>{{$artist}}</span>
+          @else
+          <span>{{$artist}},</span>
+          @endif
+
         @endforeach
         
       </div>
@@ -50,13 +55,18 @@
       <div class="text-details p-20">
         <h6>Written by:</h6>
         @foreach ($albums["writers"] as $writer)
-        <p>{{$writer}}</p>
+        @if($loop->last)
+          <span>{{$writer}}</span>
+        @else
+        <span>{{$writer}},</span>
+        @endif
+        
         @endforeach
         
       </div>
     </div>
 
-    <div class="box-details">
+    <div class="box-details details-price">
       <h3>Specs</h3>
       <div class="text-details p-10">
         <h6>Series:</h6>
