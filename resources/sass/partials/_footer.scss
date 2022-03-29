@@ -1,0 +1,132 @@
+@import "./variables.scss";
+footer{
+    .footer-top{
+      position: relative;
+      background-image: url("/img/footer-bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 150px;
+      .container{
+        display: flex;
+        justify-content: space-around;
+  
+        .nav-footer{
+          float: left;
+          width: 33%;
+          padding-top: 20px;
+          display: flex;
+          .left-nav{
+            margin-bottom: 20px;
+          }
+        }
+        .bg-footer{
+          width: 50%;
+          float: right;
+          img{
+            position: absolute;
+            top: -60px;
+            width: 438px;
+            right: 260px;
+          }
+        }
+  
+      }
+      .clearfloat{
+        display: table;
+        clear: both;
+        content: "";
+      }
+    }
+    .credits{
+      font-size: 11px;
+      width: 450px;
+      color: gray;
+      margin-left: 65px;
+      padding-bottom: 20px;
+      a{
+        color: $primaryColor;
+      }
+    }
+    //Regole footer-bottom
+    .footer-bottom{
+      background-color:$colorFooterBottom;
+      z-index: 10;
+      position: absolute;
+      width: 100%;
+      
+      .container{
+        display: flex;
+        vertical-align: middle;
+        .button-footer{
+          float: left;
+          width: 50%;
+          display: flex;
+          align-items: center;
+          margin-left: 60px;
+  
+          button{
+            background-color: $colorFooterBottom;
+            border: 1px solid $primaryColor;
+            padding: 10px;
+            color:$colorWhite;
+            font-weight: 600;
+            &:hover{
+              cursor: pointer;
+            }
+          }
+          
+        }
+        .social-footer{
+          float: right;
+          width: 50%;
+          text-align: center;
+          display: flex;
+          align-items: center;
+           
+            a{
+              text-decoration: none;
+              color: $primaryColor;
+              font-weight: 600;
+            }
+          .img-social-footer{
+            display: flex;
+            align-items: center;
+            img{
+              margin: 20px;
+            }
+          }
+        }
+      }
+      .clearfloat{
+        display: table;
+        clear: both;
+        content: "";
+      }
+    }
+  }
+
+  h3{
+    color:$colorWhite;
+    margin-top: 10px;
+}
+ nav{ 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    ul{
+        
+        li{
+            list-style: none;
+            margin-right: 20px;
+           
+
+        a{
+            text-decoration: none;
+            color: gray;
+            text-transform: capitalize;
+            font-size: 12px;
+        }
+        }
+    }
+}
