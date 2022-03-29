@@ -374,12 +374,14 @@ nav ul li a {
 
 #details .details-container {
   display: flex;
-  width: 50%;
+  width: 70%;
   margin: auto;
+  justify-content: space-around;
 }
 
 #details .details-container .box-details {
   padding-top: 30px;
+  min-width: 300px;
 }
 
 #details .details-container .box-details h3 {
@@ -388,10 +390,6 @@ nav ul li a {
 }
 
 #details .details-container .box-details .text-details {
-  display: flex;
-  width: 430px;
-  margin-right: 20px;
-  justify-content: space-between;
   border-bottom: 1px solid #003f5e;
   border-top: 1px solid #003f5e;
 }
@@ -402,6 +400,9 @@ nav ul li a {
 }
 
 #details .details-container .box-details .text-details p {
+  text-align: center;
+  margin-left: 20px;
+  display: inline;
   font-size: 12px;
 }
 

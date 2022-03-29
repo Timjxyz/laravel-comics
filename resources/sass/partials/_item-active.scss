@@ -74,21 +74,19 @@
     
     .details-container{
         display: flex;
-        width: 50%;
+        width: 70%;
         margin: auto;
+        justify-content: space-around;
         .box-details{
             padding-top: 30px;
-           
+            min-width: 300px;
             h3{
                 color:#003f5e;
                 padding-bottom: 20px;
                 
             }
             .text-details{
-                display: flex;
-                width: 430px;
-                margin-right: 20px;
-                justify-content: space-between;
+            
                 border-bottom: 1px solid #003f5e;
                 border-top: 1px solid #003f5e;
                 h6{
@@ -97,6 +95,9 @@
                     
                 }
                 p{
+                    text-align: center;
+                    margin-left: 20px;
+                    display: inline;
                     font-size: 12px;
                 }
             }

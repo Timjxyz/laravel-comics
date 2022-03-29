@@ -40,40 +40,19 @@
       <h3>Talent</h3>
       <div class="text-details p-20">
         <h6>Art By</h6>
-        <p>"José Luis García-López",
-          "Clay Mann",
-          "Rafael Albuquerque",
-          "Patrick Gleason",
-          "Dan Jurgens",
-          "Joe Shuster",
-          "Neal Adams",
-          "Curt Swan",
-          "John Cassaday",
-          "Olivier Coipel",
-          "Jim Lee"</p>
-        {{-- @foreach ($albums as $album )
-          @foreach ($album as $artists)
-            <p>{{$artists['artists']}}</p>
-                
-          @endforeach
-            
-        @endforeach --}}
-
+  
+        @foreach ($albums["artists"] as $artist)
+        <p>{{str_replace(' ', ',', $artist)}}</p>
+        @endforeach
+        
       </div>
 
       <div class="text-details p-20">
-        <h6>Art By</h6>
-        <p>"José Luis García-López",
-          "Clay Mann",
-          "Rafael Albuquerque",
-          "Patrick Gleason",
-          "Dan Jurgens",
-          "Joe Shuster",
-          "Neal Adams",
-          "Curt Swan",
-          "John Cassaday",
-          "Olivier Coipel",
-          "Jim Lee"</p>
+        <h6>Written by:</h6>
+        @foreach ($albums["writers"] as $writer)
+        <p>{{$writer}}</p>
+        @endforeach
+        
       </div>
     </div>
 
