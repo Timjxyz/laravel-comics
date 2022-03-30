@@ -22,7 +22,7 @@ Route::get('/', function () {
 Route::get('/current-album/{id}', function ($id) {
     
     $comics = config('comics');
-    if(is_numeric($id) && $id >=0 && $id < count($comics)){
+    if(is_numeric($id) && $id >=0 && $id <= count($comics)){
         $album = $comics[$id];
         return view('current-album',['albums'=>$album]);
     }else{
